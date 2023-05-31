@@ -1,0 +1,349 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4fc;
+}
+
+header{
+    width: 940px;
+    height: 70px;
+    margin:  40px auto 20px auto ;
+}
+
+.logotipo{
+    width: 70px;
+    height: 100%;
+}
+
+nav div{
+    height: 100%;
+    display: flex;
+    float: right;
+}
+
+main{
+    max-width: 940px;
+    height: 700px;
+    margin: auto;
+    display: flex;  
+    justify-content: space-between;
+}
+
+.campo-inserccion{
+    width: 60%;
+    height: 500px;
+}
+
+.textarea{    
+    width: 80%;
+    height: 80%;
+    border: 1.5px solid #0F5FA6;
+    border-radius: 20px;
+    background-color: #f4f4fc;
+    resize: none;
+
+    padding: 1.5em;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0A3871;
+
+}
+
+.textarea::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0A3871;
+}
+
+.campo-inserccion p{
+    color: #495057;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.campo-inserccion p img {
+    height: 100%;
+    padding: 10px;
+}
+
+
+.botones{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1em;
+    border: 1.5px solid #0F5FA6;
+    
+    border-radius: 10px;
+    margin-right:10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.botonencriptar{
+    width: 45%;
+    background-color: #0A3871;
+    color: #ffffff;
+}
+
+.botondesencriptar{
+    width: 40%;
+    background-color: #ffffff;
+    color: #0A3871 ;
+}
+
+.campo-resultado{
+    width: 40%;
+    height: 500px;
+}
+
+.campoderesultado{
+    background-color: #ffffff;
+    background-image: url(../Imagenes/Icono.svg); 
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 80%;
+    cursor: default;
+    color:#051933;   
+}
+
+.campoderesultado::placeholder{
+    text-align: center;
+    color: #051933;
+}
+
+.botoncopiar{
+    width: 70%;
+    background-color: #ffffff;
+    color: #0A3871 ;
+    margin: 34px 50px ;
+}
+
+
+.botones:hover{
+    position: relative;
+    bottom: 2px;
+    transition: all 2s ease-in;
+
+}
+
+footer{
+    width: 100%;
+    height: max-content;
+    background-color: #fff;
+}
+
+.informacion{
+    width: 940px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+.informacion a{
+    position: relative;
+    z-index: 100;
+}
+
+.informacion a img{
+    width: 30px;
+    padding-left: 1em;
+}
+
+.informacion a img:hover{
+    position: relative;
+    bottom: 2px;
+    transition: all 2s ease-in;
+}
+
+.copy{
+    height: 2em;
+    padding: 1em;
+    text-align: justify;
+}
+
+.copy span{
+    font-weight: 900;
+    padding: 0 0.5em;
+}
+
+@media  screen and (max-width: 940px) and (min-width: 768px) {
+
+    header{
+        width: 768px;
+        height: 70px;
+        margin:  40px auto 20px auto ;
+    }
+
+    main{
+        max-width: 768px;
+        height: 700px;
+    }
+
+    .informacion{
+        width: 768px;
+    }
+
+}
+
+@media  screen and (max-width: 768px) and (min-width: 375px) {
+
+    
+    header{
+        width: 375px;
+        height: 140px;
+        margin:  40px auto 20px auto ;
+    }
+
+    nav{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .logotipo{
+        display: flex;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    main{
+        width: 375px;
+        height: 650px;
+        display: grid; 
+        margin: 10px auto;
+    }
+
+    .campo-inserccion{
+        width: 100%;
+        height: 200px;
+    }
+
+    .textarea{
+        width: 320px;
+        height: 100%;
+    }
+
+    .botones{
+        padding: auto;
+        margin-right:5px;
+    }
+
+    .botonencriptar{
+        width: 48%;
+    }
+    
+    .botondesencriptar{
+        width: 48%;
+    }
+
+    .campo-resultado{
+        width: 100%;
+        height: 100px;
+    }
+
+    .campoderesultado{
+        background-image: none;
+    }
+
+    .informacion{
+        width: 375px;
+    }
+
+    .copy{
+        display: block;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    header{
+        width: 175px;
+        height: 70px;
+        margin:  auto ;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    .logotipo{
+        display: flex;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    main{
+        width: 175px;
+        height: 600px;
+        display: grid; 
+        margin: 10px auto;
+    }
+
+    .campo-inserccion{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .campo-inserccion p {
+        margin: 10px 0;
+    }
+
+    .textarea{
+        width: 130px;
+        height: 100%;
+        font-size: 12px;
+    }
+
+    .botones{
+        padding: auto;
+        margin-right:0;
+        margin-bottom: 5px;
+    }
+
+    .botonencriptar{
+        width: 100%;
+    }
+    
+    .botondesencriptar{
+        width: 100%;
+    }
+
+    .campo-resultado{
+        width: 100%;
+        height: 100px;
+    }
+
+    .campoderesultado{
+        background-image: none;
+    }
+
+    .botoncopiar{
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .informacion{
+        width: 175px;
+        height: 80px;
+        padding-top: 50px;
+    }
+
+    .copy{
+        display: block;
+        text-align: start;
+    }
+}
